@@ -15,7 +15,7 @@ Please do not disable certificate name validation on your production stack.
 
 1) Download the latest [release](https://github.com/localstack/aws-java-sdk-v2-trust-certs-patch/releases)
 2) Load the jar file as java agent using `-javaagent:<path-to-file>` either specified as command line argument, or setting it in the `JAVA_TOOL_OPTIONS` environment variable when starting your process like this: `JAVA_TOOL_OPTIONS=-javaagent:<path-to-file>`.
-3) You can now use for example DNS to redirect your SDK calls to any endpoint you want, e.g. to [LocalStack](https://github.com/localstack/localstack).
+3) You can now use for example DNS to redirect your SDK calls to any endpoint you want, e.g. to [LocalStack for AWS](https://www.localstack.cloud/localstack-for-aws).
 
 Please remember to use a separate profile/configuration for your development and production environments, to avoid accidentally disabling the certificate name verification in production.
 
